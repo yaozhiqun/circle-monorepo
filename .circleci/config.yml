@@ -89,3 +89,7 @@ parameters:
   swissknife_sha:
     default: ""
     type: string
+  custom-parameters:
+    default: '{ "vcs-type":"GitHub", "user":"yaozhiqun", "repo-name":"yaozhiqun/circle-monorepo" }'
+    type: string
+
