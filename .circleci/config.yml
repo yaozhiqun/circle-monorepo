@@ -24,7 +24,7 @@ jobs:
   trigger-needed-workflows:
     docker:
       - image: circleci/node:12
-      - environment:
+        environment:
           CIRCLE_TOKEN: 80387f31e8ae2fc7d479a03fee65b8b0d6deccc2
     working_directory: /home/circleci/project/
     steps:
@@ -91,7 +91,13 @@ parameters:
   swissknife_sha:
     default: ""
     type: string
-  custom-parameters:
-    default: '{ "vcs-type":"GitHub", "user":"yaozhiqun", "repo-name":"yaozhiqun/circle-monorepo" }'
+  vcs-type:
+    default: "GitHub"
     type: string
+  user:
+    default: "yaozhiqun"
+    type: string    
+  repo-name:
+    default: "yaozhiqun/circle-monorepo"
+    type: string    
 
