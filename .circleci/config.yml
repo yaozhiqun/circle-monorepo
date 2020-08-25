@@ -37,7 +37,7 @@ jobs:
               {"regex": "^(server|shared).*", "param_name": "run_server_workflow"},
               {"regex": "^(operations).*", "param_name": "run_operations_workflow"}
             ]'
-          additional-param-map: '{"run_trigger_workflow": false}'
+          additional-param-map: '{"run_trigger_workflow": true}'
           use-swissknife-sha: true
 
 workflows:
