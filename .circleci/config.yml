@@ -24,8 +24,6 @@ jobs:
   trigger-needed-workflows:
     docker:
       - image: circleci/node:12
-        environment:
-          CIRCLE_TOKEN: 80387f31e8ae2fc7d479a03fee65b8b0d6deccc2
     working_directory: /home/circleci/project/
     steps:
       - checkout
